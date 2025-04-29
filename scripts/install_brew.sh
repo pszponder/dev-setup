@@ -50,7 +50,6 @@ install_homebrew() {
 
 # Function to update and upgrade Homebrew packages
 update_homebrew() {
-  echo "🔄 Updating Homebrew and upgrading installed packages..."
   brew update
   brew upgrade
   echo "✅ Homebrew and packages updated. Exiting."
