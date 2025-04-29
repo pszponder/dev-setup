@@ -10,6 +10,6 @@ echo "🔧 Running setup..."
 ./scripts/install_brew.sh
 
 # Install Ansible
-./scripts/install_ansible
+./scripts/install_ansible.sh
 
 # TODO: Run ansible playbook
