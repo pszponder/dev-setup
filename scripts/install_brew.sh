@@ -65,14 +65,15 @@ verify_homebrew() {
 main() {
     echo "🔧 Starting Homebrew setup..."
 
-    local os
-    os="$(detect_os)"
-    echo "🖥️ Detected OS: $os"
-
     if command -v brew &> /dev/null; then
+        echo "🍺 Homebrew already installed."
         update_homebrew
         exit 0
     fi
+
+    local os
+    os="$(detect_os)"
+    echo "🖥️ Detected OS: $os"
 
     if [[ "$os" == "Linux" ]]; then
         local distro
